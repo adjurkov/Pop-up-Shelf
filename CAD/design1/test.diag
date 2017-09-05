@@ -1,0 +1,78 @@
+
+*** 20:01:46 *** 
+Starting Nastran Exporter
+
+*** 20:01:46 *** 
+Writing file C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\design1\test.dat
+
+*** 20:01:46 *** 
+Writing NX NASTRAN 11.0 compatible deck
+
+*** 20:01:46 *** 
+Writing Nastran System section
+
+*** 20:01:46 *** 
+Writing File Management section
+
+*** 20:01:46 *** 
+Writing Executive Control section
+
+*** 20:01:46 *** 
+Writing Case Control section
+
+*** 20:01:46 *** 
+Writing Bulk Data section
+
+*** 20:01:46 *** 
+ERROR : There is a pending design change requiring an update of the finite 
+        element model
+ 
+*** 20:01:46 *** 
+Writing Nodes
+
+*** 20:01:47 *** 
+Writing Elements
+
+*** 20:01:49 *** 
+Writing Physical Properties
+
+*** 20:01:49 *** 
+Writing Materials
+
+*** 20:01:49 *** 
+Writing Degree-of-Freedom Sets
+
+*** 20:01:49 *** 
+Writing Loads and Constraints
+
+*** 20:01:49 *** 
+Writing Coordinate Systems
+
+*** 20:01:49 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CQUAD4   | 23671    |
+| CTETRA   | 25509    |
+| CTRIA3   | 16       |
+| FORCE    | 3168     |
+| GRID     | 70782    |
+| MAT1     | 3        |
+| MATT1    | 2        |
+| PARAM    | 6        |
+| PSHELL   | 1        |
+| PSOLID   | 2        |
+| RBE2     | 10       |
+| SPC      | 3956     |
+| SPCADD   | 1        |
+| TABLEM1  | 6        |
++----------+----------+
+
+*** 20:01:49 *** 
+1 error issued
+
+*** 20:01:49 *** 
+Error writing Nastran file
+

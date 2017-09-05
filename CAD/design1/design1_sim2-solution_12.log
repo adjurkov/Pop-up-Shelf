@@ -1,0 +1,108 @@
+NX Nastran V11.0 (Intel64 Family 6 Model 78 Stepping 3 Windows 8  ) Control File:
+-------------------------------------------------------------------
+Nastran BUFFSIZE=32769 $(c:/program files/siemens/nx 11.0/nxnastran/conf/nast11.rcf[1])
+Nastran BUFFPOOL=20.0X $(c:/program files/siemens/nx 11.0/nxnastran/conf/nast11.rcf[4])
+Nastran DIAGA=128 DIAGB=0 $(c:/program files/siemens/nx 11.0/nxnastran/conf/nast11.rcf[8])
+Nastran SYSTEM(442)=2 $(command line[5])
+Nastran REAL=2136080384 $(Memory limit for MPI and other specialized modules)
+JID='C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\design1\design1_sim2-solution_12.dat'
+OUT='./design1_sim2-solution_12'
+MEM=961943552
+MACH='Intel64 Family 6 Model 78 Stepping 3'
+OPER='Windows 8'
+OSV=' '
+MODEL='Intel(R) Core(TM) i7-6650U CPU @ 2.20GHz (DESKTOP-L2R4CRM)'
+CONFIG=8666
+NPROC=4
+symbol=DELDIR='c:/program files/siemens/nx 11.0/nxnastran/nxn11/nast/del' $(program default)
+symbol=DEMODIR='c:/program files/siemens/nx 11.0/nxnastran/nxn11/nast/demo' $(program default)
+symbol=SSSALTERDIR='c:/program files/siemens/nx 11.0/nxnastran/nxn11/nast/misc/sssalter' $(program default)
+symbol=TPLDIR='c:/program files/siemens/nx 11.0/nxnastran/nxn11/nast/tpl' $(program default)
+SDIR='c:/users/patrick/appdata/local/temp/design1_sim2-solution_12.T14576_30'
+DBS='c:/users/patrick/appdata/local/temp/design1_sim2-solution_12.T14576_30'
+SCR=yes
+SMEM=20.0X
+NEWDEL='c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/SSS'
+DEL='NXNDEF'
+AUTH='28000@uw-aft.uwaterloo.ca'
+AUTHQUE=0
+MSGCAT='c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/analysis.msg'
+MSGDEST='f06'
+PROG=bundle
+NEWS='c:/program files/siemens/nx 11.0/nxnastran/nxn11/nast/news.txt'
+UMATLIB='libnxumat.dll'
+-------------------------------------------------------------------
+NXN_ISHELLPATH=C:\Program Files\Siemens\NX 11.0\nxnastran\bin
+NXN_JIDPATH=
+PATH=c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl;c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/sysnoise;c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/sml;c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/impi/bin;c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/monitor;C:\Program Files\Siemens\NX 11.0\nxbin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\MATLAB\R2017a\runtime\win64;C:\Program Files\MATLAB\R2017a\bin;C:\MSC.Software\Adams\2017_2\bin;C:\Program Files\nodejs\;C:\Users\Patrick\AppData\Local\Microsoft\WindowsApps;C:\Users\Patrick\AppData\Roaming\npm
+Command Line: design1_sim2-solution_12.dat prog=bundle old=no scratch=yes sys442=2
+Current Dir: C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\design1
+Executable:  c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/analysis.exe
+NXN_MSG:     stderr
+FPE:         no
+-------------------------------------------------------------------
+Current resource limits:
+ Physical memory:                    16309 MB
+ Physical memory available:           8093 MB
+ Paging file size:                   21173 MB
+ Paging file size available:         11961 MB
+ Virtual memory:                 134217727 MB
+ Virtual memory available:       134217702 MB
+-------------------------------------------------------------------
+System configuration:
+ Hostname:         DESKTOP-L2R4CRM
+ Architecture:     em64tnt
+ Platform:         Intel64 Family 6 Model 78 Stepping 3 Windows 8  
+ Model:            Intel(R) Core(TM) i7-6650U CPU @ 2.20GHz
+ Clock freq.:      2208 MHz
+ Number of CPUs:   4
+ Executable:       standard
+ Raw model ID:     8666
+ Config number:    8666
+ Physical memory:  16309 MB
+ Virtual memory:   21173 MB
+ Numeric format:   64-bit little-endian IEEE.
+ Bytes per word:   8
+ Disk block size:  512 bytes (64 words)
+ Remote shell cmd: "c:/program files/siemens/nx 11.0/nxnastran/nxn11/em64tntl/edsrmtcmd.exe" (Windows, UNIX)
+-------------------------------------------------------------------
+NX Nastran started  Mon Sep  4 20:23:30 EDT 2017
+ 20:23:30  Beginning Analysis
+
+ 20:23:30  NX NASTRAN Authorization Information - System Attributes
+ 20:23:30  --------------------------------------------------------
+ 20:23:30  Model: Intel(R) Core(TM) i7-6650U CPU @
+ 20:23:30  Machine: Intel64 Family 6 Model 78 Steppi
+ 20:23:30  OS: Windows 8
+ 20:23:30  Version:
+ 20:23:30  License File(s): 28000@uw-aft.uwaterloo.ca
+
+
+ 20:23:30  NX NASTRAN Licensing Information
+ 20:23:30  -------------------------------
+ 20:23:30  Sold To ID:            1396071 - UNIVERSITY OF WATERLO
+ 20:23:30  Webkey Access Code:    HJ246SKDOL
+ 20:23:30  License File Issuer:   SIEMENS
+
+
+ 20:23:30  NX NASTRAN Authorization Information - Checkout Successful
+ 20:23:30  ----------------------------------------------------------
+ 20:23:30  License for module NX Nastran Basic - NX Desktop (Bundle)  checked out successfully
+
+Starting viewer with UGII_MONITOR_DIR set to 'C:\Program Files\Siemens\NX 11.0\nxcae_extras\tmg\exe'
+Starting monitor viewer at C:\Program Files\Siemens\NX 11.0\nxcae_extras\tmg\exe/xcsmon_viewer.exe
+Loading Shared Library C:\Program Files\Siemens\NX 11.0\nxcae_extras\tmg\exe\mayamoncomm.dll
+ 20:23:33  Analysis started.
+ 20:23:33  Geometry access/verification to CAD part initiated (if needed).
+ 20:23:33  Geometry access/verification to CAD part successfully completed (if needed).
+ 20:23:34  Finite element model generation started.
+ 20:23:38  Finite element model generated 428640 degrees of freedom.
+ 20:23:38  Finite element model generation successfully completed.
+ 20:23:38  Application of Loads and Boundary Conditions to the finite element model started.
+ 20:23:38  Application of Loads and Boundary Conditions to the finite element model successfully completed.
+ 20:23:46  NSEXIT: EXIT(0)
+ 20:23:46  Analysis complete  0
+Real:       16.741 seconds ( 0:00:16.741)
+User:       14.578 seconds ( 0:00:14.578)
+Sys:         1.437 seconds ( 0:00:01.437)
+NX Nastran finished Mon Sep  4 20:23:46 EDT 2017

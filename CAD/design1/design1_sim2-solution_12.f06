@@ -1,0 +1,635 @@
+1
+ 
+ 
+ 
+ 
+                                                             
+                 Copyright 2016 Siemens Product Lifecycle    
+                        Management Software Inc.             
+                         All Rights Reserved.                
+                                                             
+               This software and related documentation are   
+                 proprietary to Siemens Product Lifecycle    
+                        Management Software Inc.             
+                                                             
+              Siemens and the Siemens logo are registered    
+             trademarks of Siemens AG. NX is a trademark or  
+                registered trademark of Siemens Product      
+               Lifecycle Management Software Inc. or its     
+             subsidiaries in the United States and in other  
+             countries.  NASTRAN is a registered trademark   
+                 of the National Aeronautics and Space       
+                 Administration.  All other trademarks,      
+              registered trademarks or service marks belong  
+                      to their respective holders.           
+                                                             
+           LIMITATIONS TO U.S. GOVERNMENT RIGHTS. UNPUBLISHED
+           - RIGHTS RESERVED UNDER THE COPYRIGHT LAWS OF THE 
+            UNITED STATES. This computer software and related
+               computer software documentation have been     
+            developed exclusively at private expense and are 
+           provided subject to the following rights:  If this
+               computer software and computer  software      
+            documentation qualify as "commercial items" (as  
+             that term is defined in FAR 2.101), their use,  
+            duplication or disclosure by the U.S. Government 
+           is subject to the protections and restrictions as 
+            set forth in the Siemens commercial license for  
+            software and/or documentation, as prescribed in  
+           FAR 12.212 and FAR 27.405(b)(2)(i) (for civilian  
+             agencies) and in DFARS 227.7202-1(a) and DFARS  
+           227.7202-3(a) (for the Department of Defense), or 
+           any successor or similar regulation, as applicable
+           or as amended from time to time.  If this computer
+           software and computer documentation do not qualify
+            as "commercial items", then they are "restricted 
+           computer software" and are provided with "restric-
+            tive rights", and their use, duplication or dis- 
+            closure by the U.S. Government is subject to the 
+            protections and restrictions as set forth in FAR 
+           27.404(b) and FAR 52-227-14 (for civilian agencies
+           ), and DFARS 227.7203-5(c) and DFARS 252.227-7014 
+           (for the Department of Defense), or any successor 
+           or similar regulation, as applicable or as amended
+              from time to time.  Siemens PLM Software Inc.  
+            5800 Granite Parkway, Suite 600, Plano, TX 75024 
+
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *                                 * *
+                * *       N X   N a s t r a n       * *
+                * *                                 * *
+                * *        VERSION -   11.0         * *
+                * *                                 * *
+                * *          JUN 17, 2016           * *
+                * *                                 * *
+                * *                                 * *
+                * *Intel64 Family 6 Model 78 Steppi * *
+                * *                                 * *
+                * *MODEL Intel(R) Core(TM) i7-6650U * *
+                * *                                 * *
+                * *            Windows 8            * *
+                * *                                 * *
+                * *       Compiled for X86-64       * *
+                * *                                 * *
+                * * * * * * * * * * * * * * * * * * * *
+                * * * * * * * * * * * * * * * * * * * *
+1 
+  
+                        Welcome to NX Nastran
+                        -------------------------
+  
+  
+ This "news" information can be turned off by setting "news=no" in the runtime
+ configuration (RC) file.  The "news" keyword can be set in the system RC file
+ for global, or multi-user control, and in a local file for local control.
+ Individual jobs can be controlled by setting news to yes or no on the command
+ line.
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     1
+                                                                                                                                    
+0        N A S T R A N    F I L E    A N D    S Y S T E M    P A R A M E T E R    E C H O                                           
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     NASTRAN BUFFSIZE=32769 $(C:/PROGRAM FILES/SIEMENS/NX 11.0/NXNASTRAN/CONF/NAST11.
+     NASTRAN BUFFPOOL=5869                                                           
+     NASTRAN DIAGA=128 DIAGB=0 $(C:/PROGRAM FILES/SIEMENS/NX 11.0/NXNASTRAN/CONF/NAST
+     NASTRAN SYSTEM(442)=2 $(COMMAND LINE[5])                                        
+     NASTRAN REAL=2136080384 $(MEMORY LIMIT FOR MPI AND OTHER SPECIALIZED MODULES)   
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*                    SIMCENTER V11.0.0.33 TRANSLATOR                           
+     $*                    FOR NX NASTRAN VERSION 11.0                               
+     $*                                                                              
+     $*             FEM FILE: C:\USERS\PATRICK\DOCUMENTS\ANA\MARIO TUBE\CAD\DESIGN1\D
+     $*             SIM FILE: C:\USERS\PATRICK\DOCUMENTS\ANA\MARIO TUBE\CAD\DESIGN1\D
+     $*        ANALYSIS TYPE: STRUCTURAL                                             
+     $*        SOLUTION NAME: SOLUTION 12                                            
+     $*        SOLUTION TYPE: SOL 101 LINEAR STATICS - GLOBAL CONSTRAINTS            
+     $*                                                                              
+     $*    SOLVER INPUT FILE: DESIGN1_SIM2-SOLUTION_12.DAT                           
+     $*        CREATION DATE:  4-SEP-2017                                            
+     $*        CREATION TIME: 20:23:27                                               
+     $*             HOSTNAME: DESKTOP-L2R4CRM                                        
+     $*      NASTRAN LICENSE: DESKTOP BUNDLE                                         
+     $*                                                                              
+     $*                UNITS: INCH (POUND F)                                         
+     $*                      ... LENGTH : INCH                                       
+     $*                      ... TIME   : SEC                                        
+     $*                      ... MASS   : LBF-SEC**2/IN                              
+     $*                      ... TEMPERATURE : DEG FAHRENHEIT                        
+     $*                      ... FORCE  : POUND (LBF)                                
+     $*                      ... THERMAL ENERGY : LBF-IN                             
+     $*                                                                              
+     $* IMPORTANT NOTE:                                                              
+     $*     THIS BANNER WAS GENERATED BY SIMCENTER AND ALTERING THIS                 
+     $*     INFORMATION MAY COMPROMISE THE PRE AND POST PROCESSING OF RESULTS        
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$             
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* FILE MANAGEMENT                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+     $* EXECUTIVE CONTROL                                                            
+     $*                                                                              
+     $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                           
+     $*                                                                              
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     2
+                                                                                                                                    
+0        N A S T R A N    E X E C U T I V E    C O N T R O L    E C H O                                                             
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+     ID,NASTRAN,DESIGN1_SIM2-SOLUTION_12                                                     
+     SOL 101                                                                                 
+     CEND                                                                                    
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     3
+                                                                                                                                    
+0                                                                                                                                   
+0                                        C A S E    C O N T R O L    E C H O                                                        
+                 COMMAND                                                                                                            
+                 COUNT                                                                                                              
+                  1      $*                                                                                      
+                  2      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  3      $*                                                                                      
+                  4      $* CASE CONTROL                                                                         
+                  5      $*                                                                                      
+                  6      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                  7      $*                                                                                      
+                  8      ECHO = NONE                                                                             
+                  9      SPC = 100                                                                               
+                 10      OUTPUT                                                                                  
+                 11      DISPLACEMENT(PLOT,REAL) = ALL                                                           
+                 12      SPCFORCES(PLOT,REAL) = ALL                                                              
+                 13      STRESS(PLOT,REAL,VONMISES,CENTER) = ALL                                                 
+                 14      $*  STEP: SUBCASE - STATIC LOADS 1                                                      
+                 15      SUBCASE 1                                                                               
+                 16      LABEL = SUBCASE - STATIC LOADS 1                                                        
+                 17      LOAD = 5                                                                                
+                 18      $*                                                                                      
+                 19      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 20      $*                                                                                      
+                 21      $* BULK DATA                                                                            
+                 22      $*                                                                                      
+                 23      $*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                   
+                 24      $*                                                                                      
+                 25      BEGIN BULK                                                                              
+0                             INPUT BULK DATA ENTRY COUNT =      249543
+0                       TOTAL COUNT=    249485
+
+
+                                        M O D E L   S U M M A R Y
+
+                                   NUMBER OF GRID     POINTS   =    71440
+ 
+ 
+                                   NUMBER OF CQUAD4   ELEMENTS =    23671
+                                   NUMBER OF CTETRA   ELEMENTS =    25915
+                                   NUMBER OF CTRIA3   ELEMENTS =       16
+ 
+                                   NUMBER OF RBE2     ELEMENTS =       10
+ *** USER INFORMATION MESSAGE 4109 (OUTPBN2)
+     THE LABEL IS NX11.0   FOR FORTRAN UNIT 12
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =        7 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =        8 RECORDS.)
+     (TOTAL DATA WRITTEN FOR TAPE LABEL =       17 WORDS.)
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     4
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK IBULK    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 1                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       20 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =  1247724 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  5989031 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK CASECC   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 1                 0               600                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      600 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      626 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK PVT0     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                28                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       28 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       19 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       54 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPL      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             71440             71440                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       30 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   214351 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GPDT     WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102             71440                 7                 0                 1                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       39 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   714426 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0               768                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       17 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       68 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK MPT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             33280                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =       27 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       29 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =       91 WORDS.)
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     5
+                                                                                                                                    
+0                                                                                                                                   
+0                                                                                                                                   
+                                                                                                                                    
+                                                                                                                                    
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM2    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101                 0                 0                 0              8736                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       52 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   642632 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM3    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    102                 0                 0                64                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    22179 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    22212 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM4    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    103                 0                 0                 0               544              2048                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    16447 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       34 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =    16935 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK GEOM1    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    104                 0                 0                 8                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       46 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   785876 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK BGPDT    WRITTEN ON FORTRAN UNIT  12, TRL =
+                    105             71440                 0            428640                 1                 0             79179
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       54 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =  1000190 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK DIT      WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             32768                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      383 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       24 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =      416 WORDS.)
+ *** USER INFORMATION MESSAGE 4114 (OUTPBN2)
+     DATA BLOCK EQEXIN   WRITTEN ON FORTRAN UNIT  12, TRL =
+                    101             71440                 0                 0                 0                 0                 0
+     (MAXIMUM POSSIBLE FORTRAN RECORD SIZE =    65538 WORDS.)
+     (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =    65538 WORDS.)
+     (NUMBER OF FORTRAN RECORDS WRITTEN =       32 RECORDS.)
+     (TOTAL DATA WRITTEN FOR DATA BLOCK =   285790 WORDS.)
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     6
+                                                                                                                                    
+0                                                                                                                                   
+0
+0
+0
+ 
+ *** USER INFORMATION MESSAGE 7555 (GMTSTS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     USER ACTION: USE THE GEOMCHECK (EXECUTIVE CONTROL STATEMENT) KEYWORD=VALUE TO CHANGE TOLERANCE VALUES IF DESIRED.
+     A MAXIMUM OF        100 SKEW ANGLE (SA)      TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MIN INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 MAX INT. ANGLE (IA)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 WARPING FACTOR (WF)  TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 TAPER RATIO (TR)     TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MAXIMUM OF        100 ASPECT RATIO (AR)    TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     7
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  SA =  30.00, IA(MIN) =  30.00, IA(MAX) = 150.00, WF =   0.05, TR =   0.50, AR = 100.00
+ (xxxx = LIMIT VIOLATED)
+ ELEMENT TYPE       ID          SKEW ANGLE      MIN INT. ANGLE    MAX INT. ANGLE    WARPING FACTOR      TAPER RATIO      ASPECT RATIO  
+    QUAD4       20005        69.30             54.41            139.18              0.00              0.54 xxxx         2.38     
+ *** USER INFORMATION MESSAGE 7555 (ETETGS)
+     FINITE ELEMENT GEOMETRY CHECK RESULTS EXCEED TOLERANCE LEVELS FOR THE FOLLOWING ELEMENTS.
+     ALL EDGE LENGTH TO HEIGHT  RATIO (AR)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 EDGE NODE POINT LENGTH RATIO (ER)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     A MINIMUM OF        100 EDGE NODE POINT INCLUDED ANGLE   TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+     ALL NEG/ZERO DET(JACOBIAN) VALUE (DJ)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY FAIL.
+     A MINIMUM OF        100 NEG DET(JAC) AT VERTEX NODE  (DG)TOLERANCE LIMIT VIOLATIONS WILL BE IDENTIFIED AND INDICATED BY xxxx.
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     8
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA       23750       0.19        0.07       2.76            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       23848       0.15        0.06       2.48            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       23882       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24095       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24108       0.19        0.08       2.32            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       24111       0.19        0.08       2.32            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       24184       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       24193       0.20        0.06       3.36            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       24275       0.19        0.08       2.33            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24278       0.15        0.06       2.48            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       24300       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24330       0.19        0.07       2.76            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       24368       0.23        0.10       2.40            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       24610       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24788       0.19        0.08       2.33            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       24878       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       24893       0.21        0.09       2.32            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       25103       0.23        0.11       2.12            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       25108       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25152       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25259       0.23        0.11       2.12            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       25307       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       25340       0.23        0.10       2.40            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       25371       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       25384       0.20        0.06       3.36            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       25559       0.19        0.07       2.76            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25629       0.19        0.07       2.76            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25675       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25772       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       25855       0.23        0.09       2.50            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       26027       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26163       0.19        0.08       2.33            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       26181       0.19        0.08       2.32            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26242       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26348       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26396       0.19        0.07       2.76            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       26437       0.19        0.08       2.33            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       26438       0.18        0.12       1.46            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26510       0.20        0.06       3.36            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       26557       0.19        0.07       2.76            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       26715       0.23        0.10       2.40            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       26739       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE     9
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA       26847       0.23        0.10       2.40            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       27094       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       27132       0.23        0.11       2.12            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       27141       0.19        0.07       2.76            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       27406       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       27472       0.19        0.07       2.76            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       27523       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       27547       0.15        0.06       2.48            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       27615       0.23        0.11       2.12            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       27624       0.20        0.06       3.36            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       27626       0.15        0.06       2.48            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       27699       0.18        0.10       1.84            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       27703       0.21        0.09       2.32            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       27815       0.23        0.09       2.50            1.00           32.67 xxxx       0.00            0.00     
+    TETRA       28123       0.18        0.12       1.47            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       28211       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       28220       0.12        0.06       1.92            1.00           30.01 xxxx       0.00            0.00     
+    TETRA       28233       0.19        0.08       2.32            1.00           34.17 xxxx       0.00            0.00     
+    TETRA       28242       0.13        0.03       4.29            0.94           54.58 xxxx       0.00            0.00     
+    TETRA       28254       0.27        0.07       3.98            1.00           46.99 xxxx       0.00            0.00     
+    TETRA       28376       0.21        0.07       3.11            0.96           41.70 xxxx       0.00            0.00     
+    TETRA       28391       0.17        0.04       4.57            0.92           42.22 xxxx       0.00            0.00     
+    TETRA       28441       0.19        0.08       2.46            1.00           36.50 xxxx       0.00            0.00     
+    TETRA       28478       0.19        0.04       4.28            1.00           45.01 xxxx       0.00            0.00     
+    TETRA       28483       0.23        0.08       2.99            1.00           36.50 xxxx       0.00            0.00     
+    TETRA       28589       0.10        0.02       4.44            0.89           18.71            0.00           -0.00 xxxx
+    TETRA       28615       0.17        0.03       5.57            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       28669       0.24        0.06       3.89            0.89           41.93 xxxx       0.00            0.00     
+    TETRA       28688       0.27        0.07       3.82            0.99           36.52 xxxx       0.00            0.00     
+    TETRA       28734       0.12        0.03       4.61            0.75           56.84 xxxx       0.00            0.00     
+    TETRA       28762       0.28        0.08       3.65            0.99           34.45 xxxx       0.00            0.00     
+    TETRA       28772       0.15        0.04       3.60            0.75           46.99 xxxx       0.00            0.00     
+    TETRA       28788       0.17        0.05       3.13            1.00           34.52 xxxx       0.00            0.00     
+    TETRA       28795       0.25        0.08       2.99            1.00           30.50 xxxx       0.00            0.00     
+    TETRA       28883       0.11        0.03       3.41            0.82           79.50 xxxx       0.00            0.00     
+    TETRA       28922       0.30        0.08       3.98            0.98           36.31 xxxx       0.00            0.00     
+    TETRA       28925       0.26        0.07       3.43            0.98           36.47 xxxx       0.00            0.00     
+    TETRA       28934       0.22        0.08       2.92            1.00           34.28 xxxx       0.00            0.00     
+    TETRA       29088       0.18        0.06       2.84            0.98           30.00 xxxx       0.00            0.00     
+    TETRA       29096       0.26        0.09       2.94            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       29145       0.24        0.08       2.91            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       29238       0.18        0.06       2.84            0.98           33.55 xxxx       0.00            0.00     
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    10
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA       29378       0.23        0.07       3.21            1.00           36.64 xxxx       0.00            0.00     
+    TETRA       29393       0.23        0.08       2.96            0.98           36.31 xxxx       0.00            0.00     
+    TETRA       29396       0.18        0.07       2.67            1.00           34.52 xxxx       0.00            0.00     
+    TETRA       29633       0.27        0.08       3.30            0.99           36.40 xxxx       0.00            0.00     
+    TETRA       29639       0.24        0.07       3.39            0.99           32.92 xxxx       0.00            0.00     
+    TETRA       29640       0.25        0.08       3.07            0.99           30.20 xxxx       0.00            0.00     
+    TETRA       29646       0.20        0.08       2.63            0.99           36.07 xxxx       0.00            0.00     
+    TETRA       29685       0.28        0.10       2.80            0.69           33.56 xxxx       0.00            0.00     
+    TETRA       29746       0.24        0.08       2.98            1.00           35.95 xxxx       0.00            0.00     
+    TETRA       29755       0.22        0.08       2.60            1.00           35.04 xxxx       0.00            0.00     
+    TETRA       29910       0.22        0.08       2.62            1.00           35.95 xxxx       0.00            0.00     
+    TETRA       29916       0.25        0.07       3.48            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       29921       0.25        0.08       3.30            1.00           45.00 xxxx       0.00            0.00     
+    TETRA       29928       0.30        0.08       3.75            0.89           41.93 xxxx       0.00            0.00     
+    TETRA       29985       0.19        0.07       2.63            0.92           42.22 xxxx       0.00            0.00     
+    TETRA       30055       0.22        0.08       2.86            0.99           36.16 xxxx       0.00            0.00     
+    TETRA       30058       0.24        0.07       3.40            0.99           36.48 xxxx       0.00            0.00     
+    TETRA       30849       0.17        0.04       4.70            1.00           22.73            0.00           -0.00 xxxx
+    TETRA       32032       0.22        0.03       6.33            0.93           21.37            0.00           -0.00 xxxx
+    TETRA       32790       0.21        0.03       6.85            1.00           15.26            0.00           -0.00 xxxx
+    TETRA       33108       0.24        0.09       2.77            0.97           47.31 xxxx       0.00           -0.00 xxxx
+    TETRA       34300       0.17        0.05       3.24            1.00           45.00 xxxx       0.00           -0.00 xxxx
+    TETRA       34561       0.19        0.04       4.90            0.97           33.39 xxxx       0.00           -0.00 xxxx
+    TETRA       34566       0.16        0.08       2.17            0.97           35.10 xxxx       0.00           -0.00 xxxx
+    TETRA       36289       0.22        0.06       3.68            0.99           34.52 xxxx       0.00           -0.00 xxxx
+    TETRA       37732       0.08        0.02       3.58            0.90           47.53 xxxx       0.00           -0.00 xxxx
+    TETRA       38526       0.31        0.14       2.25            1.00           37.62 xxxx       0.00           -0.00 xxxx
+    TETRA       38529       0.22        0.03       6.50            1.00           22.72            0.00           -0.00 xxxx
+    TETRA       38531       0.22        0.04       6.26            1.00           22.73            0.00           -0.00 xxxx
+    TETRA       38612       0.21        0.09       2.21            0.96           41.10 xxxx       0.00           -0.00 xxxx
+    TETRA       38720       0.17        0.05       3.13            0.91           26.56            0.00           -0.00 xxxx
+    TETRA       39283       0.22        0.06       3.72            0.99           32.63 xxxx       0.00           -0.00 xxxx
+    TETRA       39664       0.25        0.04       6.97            1.00           22.73            0.00           -0.00 xxxx
+    TETRA       39941       0.19        0.04       4.81            0.97           34.52 xxxx       0.00           -0.00 xxxx
+    TETRA       40199       0.22        0.06       3.86            0.99           34.52 xxxx       0.00           -0.00 xxxx
+    TETRA       40643       0.22        0.04       4.89            1.00           17.14            0.00           -0.00 xxxx
+    TETRA       40733       0.22        0.07       3.21            0.88           27.57            0.00           -0.00 xxxx
+    TETRA       42141       0.18        0.04       4.97            1.00           22.72            0.00           -0.00 xxxx
+    TETRA       42593       0.13        0.05       2.52            0.96           45.00 xxxx       0.00           -0.00 xxxx
+    TETRA       42693       0.23        0.05       4.71            1.00           46.99 xxxx       0.00           -0.00 xxxx
+    TETRA       42853       0.22        0.06       3.70            0.99           34.52 xxxx       0.00           -0.00 xxxx
+    TETRA       42897       0.19        0.04       4.50            0.97           47.82 xxxx       0.00           -0.00 xxxx
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    11
+                                                                                                                                    
+0                                                                                                                                   
+     TOLERANCE LIMITS ARE:  TET_AR =   100.00, TET_EPLR =   0.50, TET_EPIA =  30.00, TET_DETJ =   0.00, TET_DETG =   0.00
+                            (xxxx = LIMIT VIOLATED)
+                         LONGEST    SHORTEST          ASPECT      EDGE POINT      EDGE POINT   MIN. JACOBIAN   MIN. DET(JAC)
+ ELEMENT TYPE    ID         EDGE      HEIGHT           RATIO    LENGTH RATIO  INCLUDED ANGLE     DETERMINANT       AT VERTEX
+    TETRA       43248       0.16        0.05       3.18            1.00           34.52 xxxx       0.00           -0.00 xxxx
+    TETRA       43706       0.10        0.05       2.07            0.96           41.32 xxxx       0.00           -0.00 xxxx
+    TETRA       44215       0.21        0.09       2.46            0.97           47.31 xxxx       0.00           -0.00 xxxx
+    TETRA       44661       0.18        0.03       5.44            1.00           22.73            0.00           -0.00 xxxx
+    TETRA       45049       0.12        0.03       3.67            0.98           42.47 xxxx       0.00           -0.00 xxxx
+    TETRA       49747       0.24        0.03       8.89            0.99           17.65            0.00           -0.00 xxxx
+    TETRA       49882       0.25        0.02      12.02            1.00           13.55            0.00           -0.00 xxxx
+    TETRA       50198       0.25        0.02      12.02            1.00           13.55            0.00           -0.00 xxxx
+    TETRA       51205       0.24        0.03       8.89            0.99           17.66            0.00           -0.00 xxxx
+    TETRA       51472       0.21        0.02      10.76            0.99           33.02 xxxx       0.00           -0.00 xxxx
+    TETRA       51774       0.22        0.06       3.42            0.98           30.20 xxxx       0.00           -0.00 xxxx
+    TETRA       52009       0.22        0.06       3.42            0.98           30.20 xxxx       0.00           -0.00 xxxx
+    TETRA       52585       0.19        0.03       7.49            1.00           26.55            0.00           -0.00 xxxx
+    TETRA       53108       0.34        0.12       2.82            0.93           67.10 xxxx       0.00           -0.00 xxxx
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    12
+                                                                                                                                    
+0                                                                                                                                   
+
+
+                            E L E M E N T   G E O M E T R Y   T E S T   R E S U L T S   S U M M A R Y
+                                        TOTAL NUMBER OF TIMES TOLERANCES WERE EXCEEDED
+ ELEMENT     SKEW    ASPECT/       MINIMUM       MAXIMUM    SURFACE/FACE  THICKNESS/     EDGE POINT    EDGE POINT       JACOBIAN
+ TYPE        ANGLE  TAPER RATIO  INTER. ANGLE  INTER. ANGLE  WARP FACTOR  OFFSET RATIO  LENGTH RATIO  INCLUDED ANGLE  DETERMINANT
+ QUAD4           0          1             0             0             0           N/A           N/A           N/A           N/A     
+ TETRA         N/A          0           N/A           N/A           N/A           N/A             0          1008            40     
+ TRIA3           0        N/A           N/A             0           N/A           N/A           N/A           N/A           N/A     
+
+         N/A IN THE ABOVE TABLE INDICATES TESTS THAT ARE NOT APPLICABLE TO THE ELEMENT TYPE AND WERE NOT PERFORMED.
+         FOR ALL ELEMENTS WHERE GEOMETRY TEST RESULTS HAVE EXCEEDED TOLERANCES,
+
+         QUAD4    ELEMENT ID    20005 PRODUCED LARGEST  TAPER RATIO      OF       0.54 (TOLERANCE =        0.50).
+         TETRA    ELEMENT ID    53108 PRODUCED SMALLEST VERTEX DET(JAC) -UWM 6828- OF      -0.00 (TOLERANCE =        0.00).
+         TETRA    ELEMENT ID    50010 PRODUCED LARGEST  EDGE POINT IA    OF      79.87 (TOLERANCE =       30.00).
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    13
+                                                                                                                                    
+0                                                                                                                                   
+ *** USER INFORMATION MESSAGE 7310 (VECPRN)
+     ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM WILL BE USED AS REFERENCE LOCATION.
+     RESULTANTS ABOUT ORIGIN OF SUPERELEMENT BASIC COORDINATE SYSTEM IN SUPERELEMENT BASIC SYSTEM COORDINATES.
+0                                                  OLOAD    RESULTANT       
+  SUBCASE/    LOAD
+  DAREA ID    TYPE       T1            T2            T3            R1            R2            R3
+0        1     FX    0.000000E+00     ----          ----          ----       0.000000E+00  0.000000E+00                             
+               FY       ----       0.000000E+00     ----       0.000000E+00     ----       0.000000E+00                             
+               FZ       ----          ----      -1.000008E+02 -1.322469E+03 -5.024944E+02     ----                                  
+               MX       ----          ----          ----       0.000000E+00     ----          ----                                  
+               MY       ----          ----          ----          ----       0.000000E+00     ----                                  
+               MZ       ----          ----          ----          ----          ----       0.000000E+00                             
+             TOTALS  0.000000E+00  0.000000E+00 -1.000008E+02 -1.322469E+03 -5.024944E+02  0.000000E+00                             
+ *** USER INFORMATION MESSAGE - SINGULARITIES FOUND USING EIGENVALUE METHOD
+ ***  138210 SINGULARITIES FOUND    138210 SINGULARITIES ELIMINATED
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    14
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ *** SYSTEM INFORMATION MESSAGE 6916 (DFMSYN)
+     DECOMP ORDERING METHOD CHOSEN: DEFAULT, ORDERING METHOD USED: MMD
+  
+ *** USER INFORMATION MESSAGE 4158 (DFMSA)
+ ---- STATISTICS FOR SPARSE DECOMPOSITION OF DATA BLOCK KLL      FOLLOW
+        NUMBER OF NEGATIVE TERMS ON FACTOR DIAGONAL =     10
+        MAXIMUM RATIO OF MATRIX DIAGONAL TO FACTOR DIAGONAL =  1.7E+14 AT ROW NUMBER      85815
+ *** USER WARNING MESSAGE 4698 (DCMPD)
+     STATISTICS FOR DECOMPOSITION OF MATRIX KLL     .
+     THE FOLLOWING DEGREES OF FREEDOM HAVE FACTOR DIAGONAL RATIOS GREATER THAN
+      1.00000E+07 OR HAVE NEGATIVE TERMS ON THE FACTOR DIAGONAL.
+     USER INFORMATION:
+     THIS MESSAGE MAY BE IGNORED IF NO GRID POINT IDS OR HIGH RATIO MESSAGES APPEAR IN THE TABLE ON THE NEXT PAGE.
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    15
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+0                                                                                                                                   
+         GRID POINT ID       DEGREE OF FREEDOM   MATRIX/FACTOR DIAGONAL RATIO        MATRIX DIAGONAL                                
+                                                                                                                                    
+            5070                    T1                   3.63426E+13                   1.70819E+07
+            5070                    T3                  -1.55137E+13                   1.69113E+07
+            7459                    T2                  -3.86489E+12                   3.39691E+07
+            7459                    T3                  -2.04778E+12                   3.40148E+07
+            7459                    R1                  -5.19053E+05                   1.84807E+02
+           13895                    T1                   1.92867E+13                   1.70791E+07
+           13895                    T3                  -3.41379E+13                   1.69141E+07
+           13895                    R2                   1.50792E+07                   8.89182E+01
+           14909                    T1                   3.71336E+12                   3.41384E+07
+           14909                    T2                   3.30083E+12                   3.38473E+07
+           14909                    T3                   1.70876E+14                   1.56235E+07
+           14909                    R1                  -3.80152E+10                   1.22484E+06
+           14909                    R2                   6.15234E+10                   1.23438E+06
+           22899                    T1                   3.26521E+12                   1.70692E+07
+           22899                    T2                   1.96973E+12                   1.69236E+07
+           22899                    T3                  -2.53356E+13                   7.81177E+06
+           22899                    R1                   1.03686E+11                   6.12421E+05
+           22899                    R2                  -7.05767E+11                   6.17191E+05
+           24489                    T1                   3.63577E+12                   1.70692E+07
+           24489                    T2                   2.13773E+12                   1.69236E+07
+           24489                    T3                  -2.04459E+13                   7.81177E+06
+           24489                    R1                   7.56062E+10                   6.12421E+05
+           24489                    R2                  -4.58040E+11                   6.17191E+05
+ ^^^ USER   FATAL   MESSAGE 9137 (SEKRRS)    
+ ^^^ RUN TERMINATED DUE TO EXCESSIVE PIVOT RATIOS IN MATRIX KLL. 
+ ^^^ USER ACTION:  CONSTRAIN MECHANISMS WITH SPCI OR SUPORTI ENTRIES OR SPECIFY PARAM,BAILOUT,-1 TO  
+ ^^^ CONTINUE THE RUN WITH MECHANISMS.   
+ *** USER INFORMATION MESSAGE 4110 (OUTPBN2)
+                                 END-OF-DATA SIMULATION ON FORTRAN UNIT 12
+                                 (MAXIMUM SIZE OF FORTRAN RECORDS WRITTEN =      1 WORDS.)
+                                       (NUMBER OF FORTRAN RECORDS WRITTEN =      1 RECORDS.)
+                                       (TOTAL DATA WRITTEN FOR EOF MARKER =      1 WORDS.)
+1                                                                         SEPTEMBER   4, 2017  NX NASTRAN  6/17/16   PAGE    16
+                                                                                                                                    
+0                                                                                                            SUBCASE 1              
+ * * * *  D B D I C T   P R I N T  * * * *      SUBDMAP = PRTSUM  ,  DMAP STATEMENT NO.     29
+
+
+
+0                                   * * * *  A N A L Y S I S  S U M M A R Y  T A B L E  * * * *
+0 SEID  PEID PROJ VERS APRCH      SEMG SEMR SEKR SELG SELR MODES DYNRED SOLLIN PVALID SOLNL LOOPID DESIGN CYCLE SENSITIVITY
+ --------------------------------------------------------------------------------------------------------------------------
+     0     0    1    1 '        '    T    F    T    T    T     F      F      F      0     F     -1            0           F
+0SEID = SUPERELEMENT ID.
+ PEID = PRIMARY SUPERELEMENT ID OF IMAGE SUPERELEMENT.
+ PROJ = PROJECT ID NUMBER.
+ VERS = VERSION ID.
+ APRCH = BLANK FOR STRUCTURAL ANALYSIS.  HEAT FOR HEAT TRANSFER ANALYSIS.
+ SEMG = STIFFNESS AND MASS MATRIX GENERATION STEP.
+ SEMR = MASS MATRIX REDUCTION STEP (INCLUDES EIGENVALUE SOLUTION FOR MODES).
+ SEKR = STIFFNESS MATRIX REDUCTION STEP.
+ SELG = LOAD MATRIX GENERATION STEP.
+ SELR = LOAD MATRIX REDUCTION STEP. 
+ MODES = T (TRUE) IF NORMAL MODES OR BUCKLING MODES CALCULATED.
+ DYNRED = T (TRUE) MEANS GENERALIZED DYNAMIC AND/OR COMPONENT MODE REDUCTION PERFORMED.
+ SOLLIN = T (TRUE) IF LINEAR SOLUTION EXISTS IN DATABASE.
+ PVALID = P-DISTRIBUTION ID OF P-VALUE FOR P-ELEMENTS
+ LOOPID = THE LAST LOOPID VALUE USED IN THE NONLINEAR ANALYSIS.  USEFUL FOR RESTARTS.
+ SOLNL = T (TRUE) IF NONLINEAR SOLUTION EXISTS IN DATABASE.
+ DESIGN CYCLE = THE LAST DESIGN CYCLE (ONLY VALID IN OPTIMIZATION).
+ SENSITIVITY = SENSITIVITY MATRIX GENERATION FLAG.
+1                                        * * * END OF JOB * * *
+ 
+ 

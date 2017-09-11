@@ -1,0 +1,73 @@
+
+*** 16:56:20 *** 
+Starting Nastran Exporter
+
+*** 16:56:20 *** 
+Writing file 
+Z:\Users\Patrick\Pop-up-Shelf-master\Pop-up-Shelf-master\CAD\design1\design1_sim2-solution_12.dat
+ 
+*** 16:56:20 *** 
+Writing NX NASTRAN 11.0 compatible deck
+
+*** 16:56:20 *** 
+Writing Nastran System section
+
+*** 16:56:20 *** 
+Writing File Management section
+
+*** 16:56:20 *** 
+Writing Executive Control section
+
+*** 16:56:20 *** 
+Writing Case Control section
+
+*** 16:56:21 *** 
+Writing Bulk Data section
+
+*** 16:56:21 *** 
+Writing Nodes
+
+*** 16:58:08 *** 
+Writing Elements
+
+*** 16:59:26 *** 
+Writing Physical Properties
+
+*** 16:59:26 *** 
+Writing Materials
+
+*** 16:59:27 *** 
+Writing Degree-of-Freedom Sets
+
+*** 16:59:27 *** 
+Writing Loads and Constraints
+
+*** 16:59:34 *** 
+Writing Coordinate Systems
+
+*** 16:59:34 *** 
+Summary of Bulk Data cards written
+
++----------+----------+
+|   NAME   |  NUMBER  |
++----------+----------+
+| CQUAD4   | 23671    |
+| CTETRA   | 25915    |
+| CTRIA3   | 16       |
+| FORCE    | 4752     |
+| GRID     | 71440    |
+| LOAD     | 1        |
+| MAT1     | 2        |
+| MATT1    | 2        |
+| PARAM    | 6        |
+| PSHELL   | 1        |
+| PSOLID   | 2        |
+| RBE2     | 10       |
+| SPC      | 4111     |
+| SPCADD   | 1        |
+| TABLEM1  | 6        |
++----------+----------+
+
+*** 16:59:35 *** 
+Nastran Deck Successfully Written
+

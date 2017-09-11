@@ -1,0 +1,147 @@
+﻿STEP to UG
+! INFO-     NX STEP AP203 - V11.0
+! INFO-      
+! INFO-     Start of Translation: 6-SEP-2017  8:01:26 PM
+! INFO-      
+! STATUS-   Converting Part: C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\Shelf Extras\samsung-remote--1\samsung1.stp
+! SUMMARY-   
+! SUMMARY-    STEP Header Information
+! SUMMARY-   
+! SUMMARY-  Description      Unknown
+! SUMMARY-  Imp_Level        2;1
+! SUMMARY-  File_Name        C:\Inventor Workspace\Designs\Externally_manufactured-parts\Samsung Remote\Remote-RH\samsung1.stp
+! SUMMARY-  Date             2011-05-12T12:08:07
+! SUMMARY-  Author           robert
+! SUMMARY-  Organization     Unknown
+! SUMMARY-  Pre_Version      Autodesk Inventor 2011
+! SUMMARY-  Orig_System      Autodesk Inventor 2011
+! SUMMARY-  Authorization    Unknown
+! SUMMARY-  Schema_ID        automotive_design
+! SUMMARY-   
+! SUMMARY-    Summary of STEP Entities
+! SUMMARY-   
+! SUMMARY-  Entity Type                                                   Count
+! SUMMARY-  -----------                                                   ------
+! SUMMARY-  advanced_brep_shape_representation .........................:      2
+! SUMMARY-  advanced_face ..............................................:    473
+! SUMMARY-  application_context ........................................:      3
+! SUMMARY-  application_protocol_definition ............................:      3
+! SUMMARY-  axis2_placement_3d .........................................:    547
+! SUMMARY-  b_spline_curve_with_knots ..................................:    231
+! SUMMARY-  b_spline_curve_with_knots_and_rational_b_spline_curve ......:     10
+! SUMMARY-  b_spline_surface_with_knots ................................:     55
+! SUMMARY-  cartesian_point ............................................:   4948
+! SUMMARY-  circle .....................................................:    124
+! SUMMARY-  closed_shell ...............................................:      2
+! SUMMARY-  conical_surface ............................................:      5
+! SUMMARY-  context_dependent_shape_representation .....................:      2
+! SUMMARY-  conversion_based_unit_and_plane_angle_unit .................:      5
+! SUMMARY-  cylindrical_surface ........................................:     71
+! SUMMARY-  dimensional_exponents ......................................:      5
+! SUMMARY-  direction ..................................................:   1875
+! SUMMARY-  edge_curve .................................................:   1151
+! SUMMARY-  edge_loop ..................................................:    569
+! SUMMARY-  face_bound .................................................:     96
+! SUMMARY-  face_outer_bound ...........................................:    473
+! SUMMARY-  geometric_representation_context_and_global_uncertainty_a ..:      5
+! SUMMARY-  item_defined_transformation ................................:      2
+! SUMMARY-  length_unit_and_si_unit ....................................:      5
+! SUMMARY-  line .......................................................:    781
+! SUMMARY-  manifold_solid_brep ........................................:      2
+! SUMMARY-  next_assembly_usage_occurrence .............................:      2
+! SUMMARY-  oriented_edge ..............................................:   2302
+! SUMMARY-  plane ......................................................:    334
+! SUMMARY-  plane_angle_measure_with_unit ..............................:      5
+! SUMMARY-  plane_angle_unit_and_si_unit ...............................:      5
+! SUMMARY-  product ....................................................:      3
+! SUMMARY-  product_context ............................................:      3
+! SUMMARY-  product_definition .........................................:      3
+! SUMMARY-  product_definition_context .................................:      3
+! SUMMARY-  product_definition_formation ...............................:      3
+! SUMMARY-  product_definition_shape ...................................:      5
+! SUMMARY-  product_related_product_category ...........................:      3
+! SUMMARY-  quasi_uniform_curve ........................................:      5
+! SUMMARY-  representation_relationship_with_transformation_and_shape ..:      2
+! SUMMARY-  shape_definition_representation ............................:      3
+! SUMMARY-  shape_representation .......................................:      3
+! SUMMARY-  shape_representation_relationship ..........................:      2
+! SUMMARY-  si_unit_and_solid_angle_unit ...............................:      5
+! SUMMARY-  spherical_surface ..........................................:      8
+! SUMMARY-  uncertainty_measure_with_unit ..............................:      5
+! SUMMARY-  vector .....................................................:    781
+! SUMMARY-  vertex_point ...............................................:    778
+! SUMMARY-                                                               -------
+! SUMMARY-  Total                                                          15708
+! STATUS-    
+! STATUS-   Converting to Output Form (Phase 2 of 3): 6-SEP-2017 8:01:26 PM
+! STATUS-    
+! STATUS-    
+! STATUS-   Generating UG geometry and placing them in parts
+! STATUS-    
+! STATUS-   Creating the UG part (Phase 3 of 3): 6-SEP-2017  8:01:26 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 15885
+! STATUS-    
+! STATUS-   fixing vertex off curve and/or edge reversed faults
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\Shelf Extras\samsung-remote--1\top1
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 6-SEP-2017  8:01:27 PM
+! STATUS-    
+! STATUS-   Creating UG solid body from Input Ent Id 4875
+! STATUS-    
+! STATUS-   fixing vertex off curve and/or edge reversed faults
+! STATUS-    
+! STATUS-   fixing vertex and/or edge off surface faults
+! STATUS-    
+! STATUS-   simplifying Bsplines to analytics
+! STATUS-    
+! STATUS-   converting tolerant edges into exact edges
+! STATUS-    
+! STATUS-   doing final check of body to report any faults
+! STATUS-    
+! INFO-     Filing Part ..: C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\Shelf Extras\samsung-remote--1\bottom
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Solid .......................:     1
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              1
+! STATUS-   Creating the UG part (Phase 3 of 3): 6-SEP-2017  8:01:29 PM
+! INFO-     Filing Part ..: C:\Users\Patrick\Documents\Ana\Mario Tube\CAD\Shelf Extras\samsung-remote--1\samsung1_stp.prt
+! SUMMARY-   
+! SUMMARY-  Summary of Unigraphics Part Entities
+! SUMMARY-   
+! SUMMARY-  Entities Processed             Count
+! SUMMARY-  ------------------             -----
+! SUMMARY-  Component ...................:     2
+! SUMMARY-                                 -----
+! SUMMARY-  Total                              2
+! INFO-      
+! INFO-     Total number of solids input for this translation       :         2
+! INFO-      
+! INFO-     Number of solids created without body validation faults :         2
+! INFO-      
+! INFO-     Number of solids created with body validation fault(s)  :         0
+! INFO-      
+! INFO-     Number of solids ending up as sheet bodies              :         0
+! INFO-      
+! INFO-     End of Translation: 6-SEP-2017  8:01:29 PM
+! INFO-      
